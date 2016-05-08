@@ -21,10 +21,8 @@ public class AudioPlayer {
     
     // open and play file
     public void playAudio(String audio){
-        System.out.println("step 1");
+        System.out.println("Received request for: " + audio);
         String mp3 = (getClass().getResource("resources/" + audio).getPath());
-        System.out.println("step 2");
-        System.out.println("playing music");
         JFXPanel jp = new JFXPanel();
         Media m = new Media(Paths.get(mp3).toUri().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(m);

@@ -58,7 +58,6 @@ public class SoundbreadServer {
                 }
                 
                 // play that tune
-                System.out.println("playing: " + audio);
                 ap.playAudio(audio);
             }
         } catch (Exception ex) {
